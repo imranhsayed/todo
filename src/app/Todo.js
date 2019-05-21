@@ -18,12 +18,6 @@ class Todo extends React.Component {
 		}
 	};
 
-	addNum = ( a, b, c ) => {
-
-	};
-
-
-
 	handleOnChangeText = ( text ) => {
 		this.setState( { newTodo: text } );
 	};
