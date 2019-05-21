@@ -18,12 +18,18 @@ class Todo extends React.Component {
 		}
 	};
 
-	handleOnChangeText = ( event ) => {
-		this.setState( { newTodo: event.target.value } );
+	addNum = ( a, b, c ) => {
+
+	};
+
+
+
+	handleOnChangeText = ( text ) => {
+		this.setState( { newTodo: text } );
 	};
 
 	handlePress = ( event ) => {
-
+		this.setState( [...this.state.todos, this.state.newTodo ] );
 	};
 
 	render() {
