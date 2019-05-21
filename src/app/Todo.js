@@ -32,7 +32,7 @@ class Todo extends React.Component {
 		const { todos, newTodo } = this.state;
 
 		return(
-			<View>
+			<View style={{ marginTop: 20 }}>
 				{/*Text Input*/}
 				<TextInput
 					value={newTodo}
