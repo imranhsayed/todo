@@ -29,7 +29,8 @@ class Todo extends React.Component {
 	};
 
 	handlePress = ( event ) => {
-		this.setState( [...this.state.todos, this.state.newTodo ] );
+		const todos = [...this.state.todos, this.state.newTodo ];
+		this.setState({ todos, newTodo: '' } );
 	};
 
 	render() {
